@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      EXPLORING HAM RADIO: UNDERSTANDING INTERNATIONAL CALL SIGN ALLOCATION
+    </title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        background-color: black;
+        color: white;
+        height: 4vh;
+        font-size: 100%;
+        text-align: center;
+        padding-top: 10px;
+      }
+
+      .footer {
+        position: absolute;
+        left: 200px;
+        top: 580px;
+        font-size: 12px;
+        text-align: center;
+        padding-left: 90px;
+      }
+
+      #screen {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        height: 600px;
+        width: 800px;
+        border: solid 1px;
+      }
+
+      .incanvas {
+        margin: 5px 0 0 5px;
+        padding: 0;
+      }
+
+      .circlebg {
+        border-radius: 100%;
+        font-size: 25px;
+        color: #fff;
+        text-align: center;
+        background: #000;
+      }
+
+      .steptext {
+        display: inline;
+        font-size: 15px;
+      }
+
+      body {
+        font-family: Verdana;
+        margin: 0;
+        padding: 0;
+      }
+
+      .search-container {
+        position: relative;
+        display: inline-block;
+        padding-left: 175px;
+        padding-top: 100px;
+        border-radius: 7%;
+      }
+
+      #countryDropdown {
+        width: 200px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 92%;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        left: 325px;
+        width: 218px;
+        max-height: 260px;
+        overflow-y: auto;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 7%;
+      }
+      #submit {
+        padding-left: 380px;
+        padding-top: 260px;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 16px 13px;
+        text-decoration: none;
+        display: block;
+        /* border-radius: 10%; */
+      }
+
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="screen">
+      <h1>
+        EXPLORING HAM RADIO: UNDERSTANDING INTERNATIONAL CALL SIGN ALLOCATION
+      </h1>
+      <div class="allignment">
+        <strong class="incanvas">STEP</strong>
+        <span class="circlebg">&nbsp;1&nbsp;</span>
+        <p class="steptext">
+          &nbsp;Select the country name from the dropdown menu:
+        </p>
+      </div>
+      <div class="search-container">
+        <label for="countryDropdown">Select a Country:</label>
+        <input
+          type="text"
+          id="countryDropdown"
+          class="searchable-dropdown"
+          placeholder="Search for a country"
+        />
+        <div id="countryList" class="dropdown-content"></div>
+
+        <br />
+        <br />
+      </div>
+      <div id="submit">
+        <button
+          id="convertButton"
+          style="height: 30px; width: 50px; border-radius: 14%"
+        >
+          Submit
+        </button>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <div id="footer" class="footer">
+        &copy; EMBRACE - NITK
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const countries = [
+          "Afghanistan",
+          "Albania",
+          "Algeria",
+          "Andorra",
+          "Angola",
+          "Antigua and Barbuda",
+          "Argentina Republic",
+          "Armenia",
+          "Australia",
+          "Austria",
+          "Bahamas",
+          "Bahrain",
+          "Bangladesh",
+          "Barbados",
+          "Belarus",
+          "Belgium",
+          "Belize",
+          "Benin",
+          "Bhutan",
+          "Bolivia",
+          "Bosnia and Herzegovina",
+          "Botswana",
+          "Brazil",
+          "Brunei Darussalam",
+          "Bulgaria",
+          "Burkina Faso",
+          "Burundi",
+          "Cambodia",
+          "Cameroon",
+          "Canada",
+          "Cape Verde",
+          "Central African Republic",
+          "Chad",
+          "Chile",
+          "China",
+          "Colombia",
+          "Comoros",
+          "Congo",
+          "Costa Rica",
+          "Côte dIvoire",
+          "Croatia",
+          "Cuba",
+          "Cyprus",
+          "Czech Republic",
+          "Democratic People's Republic of Korea",
+          "Democratic Republic of the Congo",
+          "Democratic Republic of Timor-Leste",
+          "Denmark",
+          "Djibouti",
+          "Dominica",
+          "Dominican Republic",
+          "Ecuador",
+          "Egypt",
+          "El Salvador",
+          "Equatorial Guinea",
+          "Eritrea",
+          "Estonia",
+          "Ethiopia",
+          "Fiji",
+          "Finland",
+          "France",
+          "Gabonese Republic",
+          "Gambia",
+          "Georgia",
+          "Germany",
+          "Ghana",
+          "Greece",
+          "Grenada",
+          "Guatemala",
+          "Guinea",
+          "Guinea-Bissau",
+          "Guyana",
+          "Haiti",
+          "Honduras",
+          "Hungary",
+          "Iceland",
+          "India",
+          "Indonesia",
+          "Iran",
+          "Iraq",
+          "Ireland",
+          "Israel",
+          "Italy",
+          "Jamaica",
+          "Japan",
+          "Jordan",
+          "Kazakhstan",
+          "Kenya",
+          "Kingdom of Eswatini",
+          "Kiribati",
+          "Korea",
+          "Kosovo",
+          "Kuwait",
+          "Kyrgyz Republic",
+          "Lao Peoples Democratic Republic",
+          "Latvia",
+          "Lebanon",
+          "Lesotho",
+          "Liberia",
+          "Libya",
+          "Lithuania",
+          "Luxembourg",
+          "Madagascar",
+          "Malawi",
+          "Malaysia",
+          "Maldives",
+          "Mali",
+          "Malta",
+          "Marshall Islands",
+          "Mauritania",
+          "Mauritius",
+          "Mexico",
+          "Micronesia",
+          "Moldova",
+          "Monaco",
+          "Mongolia",
+          "Montenegro",
+          "Morocco",
+          "Mozambique",
+          "Myanmar",
+          "Namibia",
+          "Nauru",
+          "Nepal",
+          "Netherlands",
+          "New Zealand",
+          "Nicaragua",
+          "Niger",
+          "Nigeria",
+          "North Macedonia",
+          "Norway",
+          "Oman",
+          "Pakistan",
+          "Palau",
+          "Palestinian Authority",
+          "Panama",
+          "Papua New Guinea",
+          "Paraguay",
+          "Peru",
+          "Philippines",
+          "Poland",
+          "Portugal",
+          "Qatar",
+          "Romania",
+          "Russian Federation",
+          "Rwandese Republic",
+          "Saint Kitts and Nevis",
+          "Saint Lucia",
+          "Saint Vincent and the Grenadines",
+          "Samoa",
+          "San Marino",
+          "Sao Tome and Principe",
+          "Saudi Arabia",
+          "Senegal",
+          "Serbia",
+          "Seychelles",
+          "Sierra Leone",
+          "Singapore",
+          "Slovak Republic",
+          "Slovenia",
+          "Solomon Islands",
+          "Somali Democratic Republic",
+          "South Africa",
+          "South Sudan",
+          "Spain",
+          "Sri Lanka",
+          "Sudan",
+          "Suriname",
+          "Sweden",
+          "Switzerland",
+          "Syrian Arab Republic",
+          "Tajikistan",
+          "Tanzania",
+          "Thailand",
+          "Togolese Republic",
+          "Tonga",
+          "Trinidad and Tobago",
+          "Tunisia",
+          "Turkey",
+          "Turkmenistan",
+          "Tuvalu",
+          "Uganda",
+          "Ukraine",
+          "United Arab Emirates",
+          "United Nations",
+          "United Kingdom of Great Britain and Northan Ireland",
+          "United States of America",
+          "Uruguay",
+          "Uzbekistan",
+          "Vanuatu",
+          "Vatican City State",
+          "Venezuela",
+          "Vietnam",
+          "World Meteorological Organization",
+          "Yemen",
+          "Zambia",
+          "Zimbabwe",
+          /* ... add all countries */
+        ];
+
+        const input = document.getElementById("countryDropdown");
+        const dropdown = document.getElementById("countryList");
+
+        function displayDropdown() {
+          const searchQuery = input.value.toLowerCase();
+          const filteredCountries = countries.filter((country) =>
+            country.toLowerCase().startsWith(searchQuery)
+          );
+
+          dropdown.innerHTML = "";
+          filteredCountries.forEach((country) => {
+            const countryLink = document.createElement("a");
+            countryLink.href = "#";
+            countryLink.textContent = country;
+            dropdown.appendChild(countryLink);
+
+            countryLink.addEventListener("click", function (event) {
+              input.value = country;
+              dropdown.style.display = "none";
+              event.preventDefault();
+            });
+          });
+
+          if (filteredCountries.length > 0) {
+            dropdown.style.display = "block";
+          } else {
+            dropdown.style.display = "none";
+          }
+        }
+
+        input.addEventListener("input", displayDropdown);
+
+        input.addEventListener("click", function () {
+          displayDropdown();
+          dropdown.style.display = "block";
+        });
+
+        document.addEventListener("click", function (event) {
+          if (!event.target.closest(".search-container")) {
+            dropdown.style.display = "none";
+          }
+        });
+
+        document
+          .getElementById("convertButton")
+          .addEventListener("click", function () {
+            const selectedCountry = input.value;
+            if (selectedCountry.trim() === "") {
+              alert("Please select a country.");
+              return;
+            }
+
+            // Check if the entered country is valid
+            if (!countries.includes(selectedCountry)) {
+              alert("Invalid country name. Please select from the list.");
+              return;
+            }
+
+            // Assuming the INDEX3.html is in the same directory as the current page
+            window.location.href =
+              "index3.html?country=" + encodeURIComponent(selectedCountry);
+          });
+      });
+    </script>
+  </body>
+</html>

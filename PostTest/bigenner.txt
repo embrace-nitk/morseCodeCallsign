@@ -1,0 +1,73 @@
+beginner
+1.If a ham radio call sign is "JAA-JSZ," which country is represented by the "JAA" prefix?
+a. Jamaica
+b. Japan
+c. Jordan
+d. Jamaica
+
+(Answer: b)
+
+explanations: 
+    A: This is incorrect because the JAA prefix corresponds to Japan, not Jamaica.",
+        "b": "This is correct because the JAA prefix in a ham radio call sign corresponds to Japan.",
+        "c": "This is incorrect as the correct country for the JAA prefix is Japan.",
+        "d": "This is a duplicate option and incorrect the correct answer is Japan."
+
+
+2.The suffix in a ham radio call sign is primarily used to:
+a. Indicate the operator's mood
+b. Identify the specific station within a country or region
+c. Represent the station's power level
+d. Signal the type of modulation being used
+
+(Answer: b)
+
+"explanations": 
+                "a": "This is incorrect because the suffix in a ham radio call sign is used for identification, not to convey the operator's mood.",
+                "b": "This is incorrect because the suffix is not used to convey information about the type of modulation; it is primarily for identification purposes.",
+                "c": "This is incorrect because the suffix primarily serves to identify the specific station within a country or region, not to convey power level.",
+                "d": "This is correct because the suffix in a ham radio call sign is used to uniquely identify a specific station within a country or region."
+
+
+
+3.If a ham radio operator is using the call sign "DAA-DRZ," which country is represented by the "DL" prefix?
+a. Australia
+b. Germany
+c. Japan
+d. Brazil
+
+(Answer: b)
+
+ "explanations": {
+        "a": "Is correct because the DL prefix in the call sign DAA-DRZ corresponds to Germany.",
+        "b": "This is incorrect because the DL prefix corresponds to Germany, not Australia.",
+        "c": "This is incorrect as the correct country for the DL prefix is Germany.",
+        "d": "This is incorrect as the correct answer is Germany.
+
+4.If a ham radio call sign begins with "Z," what region is it likely to be from?
+a. South Africa
+b. Europe
+c. Asia
+d. North America
+
+(Answer: b)
+
+"explanations": {
+        "a": "This is incorrect because a call sign beginning with Z is more likely to be from Europe, not South Africa.",
+        "b": "This is correct because If a ham radio call sign begins with Z, it is likely to be from Europe.",
+        "c": "This is incorrect as the Z prefix is associated with Europe, not Asia.",
+        "d": "This is incorrect as the correct region for a call sign starting with Z is Europe."
+
+5.Which of the following is true about ham radio call signs?
+a. They are randomly assigned by local clubs
+b. They are permanent and cannot be changed
+c. They are assigned based on the operator's favorite color
+d. They are only used for Morse code communication
+
+(Answer: b)
+
+ "explanations": {
+        "a": "This is incorrect because ham radio call signs are typically assigned by regulatory authorities and are not random.",
+        "b": "This is incorrect as call signs are assigned based on regulatory conventions, not personal preferences.",
+        "c": "This is correct as they are permanent and cannot be changed. Ham radio call signs are generally permanent and assigned to specific operators.",
+        "d": "This is incorrect because ham radio call signs are used for various modes of communication, not just Morse code."

@@ -1,0 +1,73 @@
+Advanced
+1.Why is it important to understand International Call Sign allocation in ham radio?
+a.To calculate the distance between two ham radio stations
+b.To assess the quality of equipment used by a ham radio operator
+c.To identify the country of origin of a ham radio station
+d.To determine the signal strength of a ham radio transmission
+
+(Answer: c)
+
+explanations": {
+        "a": "This is incorrect as call sign allocation is not used for calculating distances.",
+        "b": "This is incorrect as call sign allocation is not related to equipment quality.",
+        "c": "This correct because understanding international call sign allocation helps in determining the country associated with a ham radio station.",
+        "d": "This is incorrect as call sign allocation is not used for assessing signal strength."
+
+
+2.Why do some countries have multiple call sign prefixes?
+a.To indicate higher transmitting power levels
+b.To accommodate a larger number of licensees
+c.To signify the use of different transmission modes
+d.As a result of historical developments in ham radio
+
+(Answer: b)
+
+explanations": {
+        "a": "This is incorrect as call sign prefixes are not related to power levels.",
+        "b": "This is correct because some countries have multiple call sign prefixes to allow for a larger pool of available call signs for ham radio operators.",
+        "c": "This is incorrect because call sign prefixes are not typically linked to transmission modes.",
+        "d": "This is incorrect as while history may play a role, the primary reason is to accommodate more licensees."
+
+
+3.How are single-letter suffixes assigned in International Call Signs?
+a.For specific governmental or military entities
+b.To indicate affiliation with a particular ham radio club
+c.By random selection from a pool of available letters
+d.As alphanumeric designations for mobile stations
+
+(Answer: a)
+
+"explanations": {
+        "a": "This is correct because single-letter suffixes in international call signs are often reserved for certain governmental or military entities.",
+        "b": "This is incorrect as single-letter suffixes are not typically used for club affiliation.",
+        "c": "This is incorrect as single-letter suffixes are usually assigned for specific purposes.",
+        "d": "This is incorrect as single-letter suffixes are not commonly used for mobile stations."
+
+
+4.Which of the following statements about International Call Signs is false?
+a.They allow operators to track their own performance
+b.They indicate the social or economic status of the operator
+c.They are important for accurate QSL card exchanges
+d.They aid in establishing reliable communication links
+
+(Answer: b)
+
+explanations": {
+        "a": "This is incorrect as the call signs are used for tracking performance in ham radio.",
+        "b": "This is correct because international call signs do not provide information about the social or economic status of the operator.",
+        "c": "This is incorrect as QSL cards often rely on correct call sign information.",
+        "d": "This is correct as correct call sign allocation helps in reliable communication."
+
+5.What would be the consequence of not having a unique call sign allocation for each country?
+a.Radio transmissions could not be reliably attributed to a specific country
+b.The number of available ham radio frequencies would decrease significantly
+c.Certain countries would gain an unfair advantage in ham radio competition
+d.Operators from different countries could not communicate with each other
+
+(Answer: a)
+
+explanations": {
+        "a": "This is correct because unique call sign allocation for each country is crucial for attributing radio transmissions to specific countries.",
+        "b": "This is incorrect as call sign allocation is not directly related to available frequencies.",
+        "c": "This is incorrect as call sign allocation is about identification, not competition.",
+        "d": "This is incorrect because communication is possible regardless of unique call sign allocation, but attribution would be challenging."

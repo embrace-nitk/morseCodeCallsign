@@ -1,0 +1,74 @@
+intermediate level
+
+1.In the international call sign "K3ABC," what does the "K" represent?
+a.Radio frequency band
+b.Operator's license class
+c.Country or region 
+d.Antenna type
+
+(Answer: c)
+
+"explanations": {
+        "a": "This is incorrect because the call sign prefix does not denote the radio frequency band.",
+        "b": "This is incorrect because the license class is typically indicated elsewhere in the call sign, not by the initial letter.",
+        "c": "This is correct because in the international call sign K3ABC, the K prefix indicates the country or region. It specifically refers to the United States.",
+        "d": "This is incorrect because the call sign is not related to the type of antenna used."
+
+
+2.If a ham radio operator is using the call sign "F8XYZ," which country is represented by the "F" prefix?
+a. Italy
+b. Finland
+c. Fiji
+d. France
+
+(Answer: d)
+
+"explanations": {
+        "a": "This is incorrect as the F prefix is not associated with Italy.",
+        "b": "This is incorrect as the F prefix is not associated with Finland.",
+        "c": "This is incorrect as the F prefix is not associated with Fiji.",
+        "d": "This is correct because in the call sign F8XYZ, the F prefix corresponds to France."
+
+
+3.If a ham radio operator is using the call sign "FAA-FZZ," which country is represented by the "F" prefix?
+a.France
+b.  Italy
+c. India
+d. Fiji
+
+(Answer: a)
+
+explanations": {
+        "a": "This correct is because in the call sign FAA-FZZ, the F prefix represents France.",
+        "b": "This is incorrect as the F prefix does not represent Italy.",
+        "c": "This is incorrect as the F prefix does not represent India.",
+        "d": "This is incorrect as the F prefix does not represent Fiji."
+
+
+4.What countries are part of the call sign allocation process described in the post?
+a.United States only
+b.Asian countries only
+c.European Union member states only
+d.Multiple / All countries
+
+(Answer: d)
+
+explanations": {
+        "a": "This is incorrect as the allocation process is not exclusive to the United States.",
+        "b": "This is incorrect because the allocation process is not limited to Asian countries.",
+        "c": "This is incorrect as the process is not confined to European Union member states.",
+        "d": "This is correct because the call sign allocation process described in the post involves multiple or all countries, not limited to a specific region."
+
+
+5.Which of the following terms accurately describes the call sign allocation in ham radio?
+a.International
+b.Local
+c.Regional
+d.National
+(Answer: a)
+
+explanations": {
+        "a": "This is correct because ham radio call sign allocation is done on an international level, following agreed-upon conventions.",
+        "b": "This is incorrect as call sign allocation extends beyond local jurisdictions.",
+        "c": "This is incorrect because while regions may have specific prefixes, the overall allocation is international.",
+        "d": "This is incorrect as the allocation process involves coordination beyond individual national boundaries."
